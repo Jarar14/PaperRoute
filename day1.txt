@@ -1,3 +1,11 @@
+<<<<<<< Updated upstream
 Trump 'unsatisfied' with Saudi handling, seeks answers
 https://www.aljazeera.com/news/2018/10/jamal-khashoggi-case-latest-updates-181010133542286.html
 20 Oct 2018 21:38 GMT
+=======
+Trump 'unsatisfied' with Saudi handling, seeks answers // 
+Trump says US will withdraw from nuclear deal with Russia
+Thousands rally to support independence vote in Taiwan
+DRC journalists set free after police detention
+World reacts to Saudi confirmation of Jamal Khashoggi's killing
+>>>>>>> Stashed changes

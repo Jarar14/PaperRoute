@@ -4,7 +4,7 @@ import csv
 
 infoStorage = open('day1.txt', 'w')
 
-#linkData = open('linkDataFile.txt', 'r+') #for reading select url data
+linkData = open('linkDataFile.txt', 'w') #for reading select url data
 
 
 def run():
@@ -30,6 +30,9 @@ def run():
     possible_links = bigLink.find_all('a')
     for url in possible_links:
         if url.has_attr('href'):
+            bigURL.append(url.attrs['href'])
+    linkData.write(bigURL[1] + "\n")
+            
 
     bigURL.append(url.attrs['href'])
 
@@ -55,11 +58,10 @@ def run():
     possible_links = smallLink.find_all('a')
     for url in possible_links:
         if url.has_attr('href'):
-            #smallURL.append(url.attrs['href'])
             if i==0 or i==3 or i==6 or i==9:
                 #print(url.attrs['href'], "\n")
                 smallURL.append(url.attrs['href'])
-                #linkData.write(url.attrs['href'] + i + "\n")
+                linkData.write(url.attrs['href'] + "\n")
             
             i = i + 1
 
