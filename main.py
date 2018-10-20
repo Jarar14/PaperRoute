@@ -4,6 +4,8 @@ import csv
 
 article_file = open('day1.txt', 'w')
 
+#linkData = open('linkDataFile.txt', 'r+') #for reading select url data
+
 
 def run():
     # CONNECT TO ALJAZEERA WEB PAGE
@@ -43,16 +45,23 @@ def run():
         article_file.write(heading_data)
         article_file.write("\n")
 
-    smallLink = bsObj.find("div", {"class": "topFeature-sblock-wr"})
+    smallLink = bsObj.find("div", {"class": "col-md-6 middle-east-bot"})
+
+    print("\n---Small Link data---\n")
 
     smallURL = []
     i = 0
     possible_links = smallLink.find_all('a')
     for url in possible_links:
         if url.has_attr('href'):
-            smallURL.append(url.attrs['href'])
-            print(smallURL[1])
+            #smallURL.append(url.attrs['href'])
+            if i==0 or i==3 or i==6 or i==9:
+                #print(url.attrs['href'], "\n")
+                smallURL.append(url.attrs['href'])
+                #linkData.write(url.attrs['href'] + i + "\n")
+            
             i = i + 1
 
-
+    for i in smallURL:
+        print(smallURL[i])
 run()
