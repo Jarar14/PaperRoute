@@ -1,0 +1,58 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color:rgba(255, 0, 0, 0.65);
+}
+
+#head {
+  margin: auto;
+  width: 50%;
+}
+
+.background {
+  content: "";
+  background: url('Newspaper.jpg');
+  opacity: 0.13;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.Headingline{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  top: 225px;
+  left: 50px;
+  width: 92%;
+  height: 200px;
+  position:absolute;
+
+}
+.Headingline > div{
+  display:inline-block;
+  vertical-align:middle;
+  text-align:center;
+  line-height:150px;
+  width:150px;
+  height: 150px;
+  border-radius:50%;
+  background-color:white;
+
+}
+/* .pointer interlines with .Headingline > div:hover to create a hover option for the circles. */
+.pointer {cursor:pointer;}
+.Headingline > div:hover {
+  background-color:yellow;
+}
+.Headingline > div:hover:active {
+  background-color:blue;
+}
+
+/* div:hover:active hover goes first and in if active happens x thing happens */
