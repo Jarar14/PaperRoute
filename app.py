@@ -7,7 +7,8 @@ with open("day1.txt", 'r') as f:
 
 @app.route('/')
 def index():
-    return render_template("index.html", content=content)
+    #SHIFT+f5 to hard-refresh
+    return render_template('index.html', content=content)
 
 if __name__ == '__main__':
     app.run(debug=True)
