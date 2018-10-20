@@ -14,7 +14,7 @@ Implementing options to allow the user to read the most popular news from the pa
 
 ## Authors
 
-* 
+
 **Omer Khan** - [OKLodhi](https://github.com/oklodhi)
 
 **Jarar Bangash** - [Jarar14](https://github.com/Jarar14)
