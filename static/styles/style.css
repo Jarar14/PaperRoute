@@ -34,6 +34,7 @@ button {
     width:150px;
     height:150px;
     border-radius:50%;
+
 }
 
 .Headingline {
@@ -43,12 +44,11 @@ button {
   top: 225px;
   left: 50px;
   width: 92%;
-  height: 200px;
+  height: 50%;
   position:absolute;
-
 }
 #Disappear{
-
+  z-index:2;
 }
 #Cir {
   display:inline-block;
@@ -58,7 +58,7 @@ button {
   width: 150px;
   height: 150px;
   border-radius:50%;
-  background-color:blue;
+  background-color:white;
 
 }
 /* .pointer interlines with .Headingline > div:hover to create a hover option for the circles. */
