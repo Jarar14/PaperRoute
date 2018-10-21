@@ -22,7 +22,7 @@ def run():
         heading_data = article.text
         nameList.append(heading_data)
         TitleStorage.write(heading_data + '\n')
-        print (nameList)
+        #print (nameList)
 
     URLList = []
     possible_links = bigLink.find_all('a')
@@ -32,22 +32,20 @@ def run():
     URLStorage.write(URLList[1] + "\n")
 
 
-    print(URLList[1])  # has link to big article
+    #print(URLList[1])  # has link to big article
 
-    print("\n")
+    #print("\n")
 
     smalltitle = bsObj.findAll("h2", {"class": "top-sec-smalltitle"})
 
     for article in smalltitle:
         heading_data = article.text
-        print(heading_data)
+        #print(heading_data)
 
         TitleStorage.write(heading_data)
         TitleStorage.write("\n")
 
     smallLink = bsObj.find("div", {"class": "col-md-6 middle-east-bot"})
-
-    print("\n---Small Link data---\n")
 
     smallURL = []
     i = 0
@@ -57,19 +55,19 @@ def run():
             if i==0 or i==3 or i==6 or i==9:
                 smallURL.append(url.attrs['href'])
                 URLStorage.write("https://www.aljazeera.com"+ url.attrs['href'] + "\n")
-            
+
             i = i + 1
 
             URLList.append(url.attrs['href'])
 
-    # dateURL = urlopen("https://www.aljazeera.com" + URLList[1])
-    # dateObj = BeautifulSoup(dateURL, features="html.parser")
-    # bigArticleDate = dateObj.findAll("time", {"class": "timeagofunction"})
-    #
-    # dateList = list()
-    # for date in bigArticleDate:
-    #     article_date = date.text
-    #     dateList.append(article_date)
-    #     DateStorage.write(article_date)
+# dateURL = urlopen("https://www.aljazeera.com" + URLList[1])
+# dateObj = BeautifulSoup(dateURL, features="html.parser")
+# bigArticleDate = dateObj.findAll("time", {"class": "timeagofunction"})
+#
+# dateList = list()
+# for date in bigArticleDate:
+#     article_date = date.text
+#     dateList.append(article_date)
+#     DateStorage.write(article_date)
 
 run()

@@ -5,6 +5,7 @@
 
 body{
   background-color:rgba(255, 255, 255, 0.65);
+  font-family: 'Open Sans', sans-serif;
 }
 
 #head {
@@ -22,7 +23,7 @@ body{
   justify-content:space-between;
   top:20%;
   margin-top:0px;
-  margin-left:25%;
+  margin-left:28%;
 
 }
 
@@ -39,18 +40,20 @@ body{
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: -1;
   background-size:cover;
   position:absolute;
 }
 
 .header{  display:flex;
+  z-index: 5;
   justify-content: space-between;
   align-items:center;
   margin-top:30px;
   margin-left:10%;
   width:80%;
   font-size: 30px;
-  color: #5500cc;
+  color: #310054;
 }
 
 

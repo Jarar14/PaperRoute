@@ -5,12 +5,14 @@
   <link rel="stylesheet" type= "text/css" href="static/styles/animate.css">
   <link rel="stylesheet" type= "text/css" href="static/styles/style.css">
   <link rel="stylesheet" type="text/css" href="static/styles/BoxNews.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
   $(function(){
     $("#Display").hide();
-    $("button").click(function(){
-      $("#Disappear").fadeOut(1200, function(event){
+    $(".490").click(function(){
+      $("#Disappear").fadeOut(0, function(event){
+        $("#logo").fadeOut(80);
         $("#Display").delay(300).fadeIn(1200);
       });
     });
@@ -19,24 +21,23 @@
 </head>
 <body>
 
-  
-<div class="header">
-<u><div>World</div></u>
-<u><div>Politics</div></u>
-<u><div>Business</div></u>
-<u><div>Science</div></u>
-<u><div>Technology</div></u>
-</div>
-<div id="logo">
-</div>
 
+  <div class="header">
+    <u><div><a href="">World</a></div></u>
+    <u><div><a href="">Business</a></div></u>
+    <u><div><a href="">Technology</a></div></u>
+    <u><div><a href="">Science</a></div></u>
+    <u><div><a href="">Politics</a></div></u>
+  </div>
+  <div id="logo">
+  </div>
   <div class="background">
   </div>
   <div id="Disappear">
     <div class="Headingline">
       <div id="Cir">
         <div class="pointer">
-          <button id="num">12<span id="letter">hr</span></button>
+          <button class="490" id="num">12<span id="letter">hr</span></button>
         </div>
       </div>
       <div id="Cir">
@@ -65,7 +66,7 @@
   <!-- Box phase  -->
   <div id='Display'>
     <div class="PickedDate">
-      <h1>1 day</h1>
+      <h1>12 hr</h1>
     </div>
     <div class="News">
       <h2><a href="{{link1}}" target="_blank">{{content1}}</a></h2>
