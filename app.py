@@ -30,7 +30,9 @@ p.close()
 @app.route('/')
 def index():
     #SHIFT+f5 to hard-refresh
-    return render_template('index.html', content1=content1, content2=content2, content3=content3, content4=content4, content5=content5, link1=link1, link2=link2, link3=link3, link4=link4, link5=link5, pub1=pub1, pub2=pub2, pub3=pub3, pub4=pub4, pub5=pub5)
+    return render_template('index.html', content1=content1, content2=content2, content3=content3, content4=content4, content5=content5,
+                           link1=link1, link2=link2, link3=link3, link4=link4, link5=link5,
+                           pub1=pub1, pub2=pub2, pub3=pub3, pub4=pub4, pub5=pub5)
 
 while True:
     print ("Updating...")
