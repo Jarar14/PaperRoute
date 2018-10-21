@@ -49,9 +49,10 @@ def run():
         URLStorage.write(URLList[i] + "\n")
 
     NewsList=["aljazeera","abcnews","cnn"]
+    NewOutput=["Al Jazeera","ABCNews","CNN"]
     for i in range(1,len(URLList)):
         for j in range(0,len(NewsList)):
             if NewsList[j] in URLList[i]:
-                 Publication.write(NewsList[j] + "\n")
+                 Publication.write(NewOutput[j] + "\n")
 
 run()
