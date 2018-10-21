@@ -1,4 +1,4 @@
-html,body {
+* {
   margin: 0;
   padding: 0;
 }
@@ -24,18 +24,33 @@ body{
   z-index: -1;
 }
 
-.Headingline{
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+
+}
+
+.Headingline {
   display:flex;
   justify-content: space-between;
   align-items:center;
   top: 225px;
-  left: 50px;
+  left: 90px;
   width: 92%;
-  height: 200px;
+  height: 50%;
   position:absolute;
-
 }
-.Headingline > div{
+#Disappear{
+  z-index:2;
+}
+#Cir {
   display:inline-block;
   vertical-align:middle;
   text-align:center;
@@ -43,16 +58,18 @@ body{
   width: 150px;
   height: 150px;
   border-radius:50%;
-  background-color:blue;
+  background-color:white;
 
 }
 /* .pointer interlines with .Headingline > div:hover to create a hover option for the circles. */
 .pointer {cursor:pointer;}
-.Headingline > div:hover {
-  background-color:yellow;
-}
-/* div:hover:active hover goes first and in if active happens x thing happens */
+#Cir:hover {
+    border-radius: 0%;
+    transition: all 1s ease-in-out;
+  }
 
-.Headingline > div:hover:active {
-  background-color:blue;
+
+#Cir:active{
+  opacity:0;
+  transition: all 3s ease-in-out;
 }

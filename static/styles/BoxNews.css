@@ -1,0 +1,69 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
+#Display {
+  height: 80%;
+  z-index:1;
+  padding:10em;
+}
+body{
+  background-color:rgba(0, 0, 255, 0.60);
+}
+
+h1{
+  font-family:sans-serif;
+  text-align:center;
+  font-size:60px;
+  vertical-align:middle;
+}
+
+p1{
+  font-family:sans-serif;
+  text-align:right;
+  position:absolute;
+  right:0;
+  bottom:0;
+
+}
+
+.background {
+  content: "";
+  background: url('Newspaper.jpg');
+  opacity: 0.13;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.PickedDate{
+  position:relative;
+  margin-top:20px;
+  height: 85px;
+  width: 600px;
+  background-color:white;
+  align-items:center;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+.News{
+  position:relative;
+  margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+  min-height: 100px;
+  margin-bottom: 20px;
+  word-wrap:break-word;
+  width:600px;
+  background-color:white;
+  text-align: center;
+  line-height: 100px;
+  clear:both;
+  right:0;
+  left:0;
+}

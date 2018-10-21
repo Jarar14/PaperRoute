@@ -4,36 +4,75 @@
 
   <link rel="stylesheet" type= "text/css" href="static/styles/animate.css">
   <link rel="stylesheet" type= "text/css" href="static/styles/style.css">
+  <link rel="stylesheet" type="text/css" href="static/styles/BoxNews.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $("#Display").hide();
+    $("button").click(function(){
+      $("#Disappear").fadeOut(1200, function(event){
+        $("#Display").delay(300).fadeIn(1200);
+      });
+    });
+  });
+  </script>
 </head>
 <body>
+
   <div class="background">
   </div>
-  <div class="Headingline">
-    <div>
-      <div class="pointer">
-        .
+  <div id="Disappear">
+    <div class="Headingline">
+      <div id="Cir">
+        <div class="pointer">
+          <button>1</button>
+        </div>
+      </div>
+      <div id="Cir">
+        <div class="pointer">
+          <button>2</button>
+        </div>
+      </div>
+      <div id="Cir">
+        <div class="pointer">
+          <button>3</button>
+        </div>
+      </div>
+      <div id="Cir">
+        <div class="pointer">
+          <button>4</button>
+        </div>
+      </div>
+      <div id="Cir">
+        <div class="pointer">
+          <button>5</button>
+        </div>
       </div>
     </div>
-    <div>
-      <div class="pointer">
-        .
-      </div>
+
+  </div> -->
+  <!-- Box phase  -->
+  <div id='Display';>
+    <div class="PickedDate">
+      <h1>1 day</h1>
     </div>
-    <div>
-      <div class="pointer">
-        .
-      </div>
+    <div class="News">
+      <h2>{{content1}}</h2>
     </div>
-    <div>
-      <div class="pointer">
-        .
-      </div>
+    <div class="News">
+      <h2>{{content2}}</h2>
     </div>
-    <div>
-      <div class="pointer">
-        .
-      </div>
+    <div class="News">
+      <h2>{{content3}}</h2>
+    </div>
+    <div class="News">
+      <h2>{{content4}}</h2>
+    </div>
+    <div class="News">
+      <h2>{{content5}}</h2>
     </div>
   </div>
+
 </body>
+
 </html>
