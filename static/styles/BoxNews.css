@@ -1,7 +1,6 @@
 #Display {
   height: 80%;
   z-index:1;
-  padding:3em;
 }
 
 h1{
@@ -35,13 +34,18 @@ h2 a{
   text-decoration: underline;
 }
 
+.pubs{
+  font-style: italic;
+  font-size: 20px;
+}
+
 .News{
   position:relative;
-  margin-top:20px;
+  margin-top:25px;
   margin-left:auto;
   margin-right:auto;
-  min-height: 100px;
-  margin-bottom: 20px;
+  min-height: 50px;
+  margin-bottom: 25px;
   word-wrap:break-word;
   width:55%;
   border:10px #310054 solid;
