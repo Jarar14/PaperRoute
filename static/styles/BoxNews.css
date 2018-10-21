@@ -1,14 +1,7 @@
-html,body {
-  margin: 0;
-  padding: 0;
-}
 #Display {
   height: 80%;
   z-index:1;
   padding:10em;
-}
-body{
-  background-color:rgba(0, 0, 255, 0.60);
 }
 
 h1{
@@ -25,18 +18,6 @@ p1{
   right:0;
   bottom:0;
 
-}
-
-.background {
-  content: "";
-  background: url('Newspaper.jpg');
-  opacity: 0.13;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  z-index: -1;
 }
 
 .PickedDate{
