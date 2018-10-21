@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import time
 
 app = Flask(__name__)
 
@@ -18,10 +19,16 @@ with open("articleURLS.txt", 'r') as u:
 c.close()
 u.close()
 
+
 @app.route('/')
 def index():
     #SHIFT+f5 to hard-refresh
     return render_template('index.html', content1=content1, content2=content2, content3=content3, content4=content4, content5=content5, link1=link1, link2=link2, link3=link3, link4=link4, link5=link5)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+while True:
+    print ("Updating...")
+    if __name__ == '__main__':
+        app.run(debug=True)
+        time.sleep(5) #sleep for 60 seconds
+
+

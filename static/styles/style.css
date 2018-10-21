@@ -5,6 +5,7 @@
 
 body{
   background-color:rgba(255, 255, 255, 0.65);
+  font-family: 'Open Sans', sans-serif;
 }
 
 #head {
@@ -15,15 +16,17 @@ body{
   content:"";
   background: transparent url("DarkerPurp.png") scroll no-repeat 0 0;
   background-size: cover;
-  min-width: 750px;
+  width: 750px;
   height:250px;
   position:absolute;
-  display:block;
-  top:175px;
-  left:+810px;
+  display:flex;
+  justify-content:space-between;
+  top:20%;
+  margin-top:0px;
+  margin-left:28%;
 
 }
-#logo2{}
+
 .background {
   content: "";
   background: url('Newspaper.jpg');
@@ -37,18 +40,20 @@ body{
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: -1;
   background-size:cover;
   position:absolute;
 }
 
 .header{  display:flex;
+  z-index: 5;
   justify-content: space-between;
   align-items:center;
   margin-top:30px;
   margin-left:10%;
   width:80%;
   font-size: 30px;
-  color: #5500cc;
+  color: #310054;
 }
 
 
@@ -74,7 +79,7 @@ button {
   justify-content: space-between;
   align-items:center;
   top: 300px;
-  left: 222px;
+  margin-left: 10%;
   width: 80%;
   height: 50%;
   position:absolute;
@@ -91,6 +96,7 @@ button {
   height: 175px;
   border-radius:50%;
   border:10px #310054 solid;
+  transition: all .3s ease-in-out;
 }
 /* .pointer interlines with .Headingline > div:hover to create a hover option for the circles. */
 .pointer {cursor:pointer;}
