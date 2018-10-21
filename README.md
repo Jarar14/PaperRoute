@@ -1,14 +1,21 @@
 # Paper Route
-Allows user to quickly catch up on the popular news articles using a compiled news list. We can filter news by the past 12 hours, 1 day, 2 days and 4 days and 1 week, with separate categories such as Business and Sport
+Allows users to quickly catch up on the popular news using a compiled, curated, list of articles. We can get relevant news within different time frames, with separate categories such as World news, Politics, Business, Science, and Technology.
 
-## Project Goals
-Implementing options to allow the user to read the most popular news from various times, with a focus on news better suited to user geolocation and interests. Article popularity is ranked by article activity. We also intend to implement a function that updates the user on the top news since they last used the app, by recording their last date of use, gathering top news from every day since then, and compiling the most popular articles for the user.
+## Key Features
+* Allow users the options to read the most popular news from various times.
+* Focus on news with article popularity that is ranked by article activity.
+* Stores user cache to provide articles based on elapsed time.
+* Streamlined user-friendly interface.
+
+## What Next
+* Implement article categories
+* Further curate articles based on personal-interest and geolocation
+* Change static time intervals to dynamic intervals to expand on user usage
 
 ## Built With
 * [Python](https://www.python.org/) - Main language
 * [Flask](http://flask.pocoo.org/) - Web framework
-* [HTML/CSS] - Web design
-* [JQuery] - Web design
+* [HTML/CSS/JQuery] - Web design
 
 ## Authors
 **Omer Khan** - [OKLodhi](https://github.com/oklodhi)
@@ -23,5 +30,3 @@ Implementing options to allow the user to read the most popular news from variou
 KSU & Hack K-State
 
 Major League Hacking
-
-Al-Jazeera News
