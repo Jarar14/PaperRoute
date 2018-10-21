@@ -96,6 +96,7 @@ button {
   height: 175px;
   border-radius:50%;
   border:10px #310054 solid;
+  transition: all .3s ease-in-out;
 }
 /* .pointer interlines with .Headingline > div:hover to create a hover option for the circles. */
 .pointer {cursor:pointer;}
