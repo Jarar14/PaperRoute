@@ -4,24 +4,41 @@
 }
 
 body{
-  background-color:rgba(255, 0, 0, 0.65);
+  background-color:rgba(255, 255, 255, 0.65);
 }
 
 #head {
   margin: auto;
   width: 50%;
 }
+#logo {
+  content:"";
+  background: transparent url("DarkerPurp.png") scroll no-repeat 0 0;
+  background-size: cover;
+  min-width: 750px;
+  height:250px;
+  position:absolute;
+  display:block;
+  top:50px;
+  left:+810px;
 
+}
+#logo2{}
 .background {
   content: "";
   background: url('Newspaper.jpg');
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
   opacity: 0.13;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  position: fixed;
-  z-index: -1;
+  background-size:cover;
+  position:absolute;
 }
 
 button {
@@ -29,12 +46,16 @@ button {
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
+    font-size: 75px;
     overflow: hidden;
     outline:none;
     width:150px;
     height:150px;
-    border-radius:50%;
-
+    color: #310054;
+}
+ #letter {
+    background-color: Transparent;
+    font-size: 50px;
 }
 
 .Headingline {
@@ -42,8 +63,8 @@ button {
   justify-content: space-between;
   align-items:center;
   top: 225px;
-  left: 90px;
-  width: 92%;
+  left: 222px;
+  width: 80%;
   height: 50%;
   position:absolute;
 }
@@ -54,18 +75,17 @@ button {
   display:inline-block;
   vertical-align:middle;
   text-align:center;
-  line-height: 150px;
-  width: 150px;
-  height: 150px;
+  line-height: 210px;
+  width: 175px;
+  height: 175px;
   border-radius:50%;
-  background-color:white;
-
+  border:10px #310054 solid;
 }
 /* .pointer interlines with .Headingline > div:hover to create a hover option for the circles. */
 .pointer {cursor:pointer;}
 #Cir:hover {
     border-radius: 0%;
-    transition: all 1s ease-in-out;
+    transition: all .25s ease-in-out;
   }
 
 
