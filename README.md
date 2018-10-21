@@ -1,6 +1,8 @@
 # Paper Route
 Allows users to quickly catch up on the popular news using a compiled, curated, list of articles. We can get relevant news within different time frames, with separate categories such as World news, Politics, Business, Science, and Technology.
 
+![Landing Page of Paper Route](https://imgur.com/a/C0Y3ecP)
+
 ## Key Features
 * Allow users the options to read the most popular news from various times.
 * Focus on news with article popularity that is ranked by article activity.
