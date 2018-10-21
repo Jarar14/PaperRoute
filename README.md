@@ -12,7 +12,7 @@ Allows users to quickly catch up on the popular news using a compiled, curated, 
 * Further curate articles based on personal-interest and geolocation
 * Change static time intervals to dynamic intervals to expand on user usage
 
-##Overall
+## Overall
 This was a first Hackathon for 3/4 members in our team. We were able to effectively delegate the workload and take personal responsibility for a major facet of the app's success. We're very proud of the work we put into developing a clean, and interesting, platform and feel that our idea should be shared with others.
 
 ## Built With
